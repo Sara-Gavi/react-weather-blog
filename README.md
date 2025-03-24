@@ -13,3 +13,7 @@ Este proyecto ha sido desarrollado como **ejercicio práctico** siguiendo la gu�
 - SVG como React Components
 - API de OpenWeather (para el widget del clima)
 - Express (para el backend)
+
+## 💡 Mejora
+
+Aunque este proyecto está resuelto de forma sencilla, **podría mejorarse organizando el backend con el patrón Modelo-Vista-Controlador (MVC)**. Esto permitiría una estructura de código más clara si el proyecto creciera.

@@ -2,6 +2,7 @@
 
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 require("dotenv").config();
 
 // CREAR VARIABLES
@@ -52,3 +53,13 @@ app.get("/api/weather/:country/:city", async (req, res) => {
 
   return res.json(weatherRecord);
 });
+
+// STATIC
+
+app.use(express.static(path.join(__dirname, "public_frontend")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public_frontend", "index.html"));
+});
+
+module.exports = app;
